@@ -1,0 +1,39 @@
+ol.unstyled,
+ul.unstyled {
+	margin: 0;
+	li {
+		list-style-type: none;
+		margin: 0;
+	}
+}
+.preload {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	visibility: hidden;
+}
+.clear {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+.none {
+	display: none;
+}
